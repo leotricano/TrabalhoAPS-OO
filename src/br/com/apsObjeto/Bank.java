@@ -48,7 +48,6 @@ public class Bank {
     }
 
 
-
     public Double getAccountBalance() {
         return accountBalance;
     }
@@ -74,9 +73,6 @@ public class Bank {
     public void setAccountBalance(Double accountBalance) {
         this.accountBalance = accountBalance;
     }
-
-
-
 
 
     public void describeAccount() {

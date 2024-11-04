@@ -1,11 +1,9 @@
 package br.com.apsObjeto;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         // Cria um objeto Person
-        Person person = new Person("João Silva", "joao.silva@email.com", "123-456-789");
+        Person person = new Person("João Silva", "joao.silva@email.com", "123-456-789", "11042882710");
 
         // Cria um objeto Bank com saldo inicial e objeto Person associado
         Bank bankAccount = new Bank(1000.0, person);

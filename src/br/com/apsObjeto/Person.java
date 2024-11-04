@@ -8,9 +8,10 @@ public class Person {
 
 
 //========================= Construtor ===============================
-public Person(String name, String email, String phoneNumber) {
+public Person(String name, String email, String phoneNumber, String cpf) {
     this.name = capitalizeWords(name);
     this.email = email;
+    this.cpf = cpf;
     this.phoneNumber = phoneNumber;
 }
 
@@ -67,7 +68,7 @@ public void setCpf(String cpf) {
 public void describePerson() {
     System.out.println("Nome: " + name + "\n" +
             "Email: " + email + "\n" +
-            "Número de telefone: " + phoneNumber +
+            "Número de telefone: " + phoneNumber + "\n" +
             "CPF:" + cpf);
 }
 }
