@@ -1,12 +1,20 @@
+package br.com.apsObjeto;
+
 public class Bank {
     private String accountNumber;
-    private  String name;
-    private Double accountBalance;
-    private String email;
-    private String phoneNumber;
 
+    private Double accountBalance;
+
+    private Person person;
 
     //=========================Construtor=============================================
+
+    // Construtor que aceita saldo inicial e dados do cliente
+    public Bank(Double initialBalance, Person person) {
+        this.accountBalance = initialBalance;
+        this.person = person;
+    }
+
     public Bank (Double initialBalance){
         this.accountBalance = initialBalance; //Valor inicial
     }
@@ -33,40 +41,22 @@ public class Bank {
         }
     }
 
-    private String capitalizeWords(String str) { //Formatação para nome
-        String[] words = str.split("\\s+");  // Divide o nome por espaços em branco
-        StringBuilder capitalized = new StringBuilder();
 
-        for (String word : words) {
-            if (word.length() > 0) {
-                // Capitaliza a primeira letra e mantém o resto da palavra em minúsculas
-                capitalized.append(Character.toUpperCase(word.charAt(0)))
-                        .append(word.substring(1).toLowerCase())
-                        .append(" ");  // Adiciona um espaço após cada palavra
-            }
-        }
-        return capitalized.toString().trim();
-    }
     //========================Getter========================================
     public String getAccountNumber() {
         return accountNumber;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
 
     public Double getAccountBalance() {
         return accountBalance;
     }
+
+    public Person getPerson() {
+        return person;
+    }
+
     //==================Setter=================================================
 
 
@@ -74,10 +64,10 @@ public class Bank {
         this.accountNumber = accountNumber;
     }
 
-    public void setName(String name) {
-        this.name = capitalizeWords(name);
+    public void setPerson(Person person) {
+        this.person = person;
     }
-    // Método auxiliar para capitalizar a primeira letra de cada palavra================
+
 
 
     //=====================================================================================
@@ -85,19 +75,16 @@ public class Bank {
         this.accountBalance = accountBalance;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
 
-    public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
 
-    public void describeAccount () {
-        System.out.println("Nome: " + name + "\n" +
-                "Numero da conta: " + accountNumber + "\n" +
-                "Saldo: " + accountBalance + "\n" +
-                "Email:" + email + "\n" +
-                "Numero de telefone: "+ phoneNumber);
+
+
+    public void describeAccount() {
+        System.out.println("Informações da Conta:");
+        System.out.println("Número da conta: " + accountNumber);
+        System.out.println("Saldo: " + accountBalance);
+        System.out.println("Informações do Cliente:");
+        person.describePerson(); // Chama o método da classe Person para exibir informações pessoais
     }
 }
+
