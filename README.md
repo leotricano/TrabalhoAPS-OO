@@ -1,34 +1,34 @@
-💰 Simulador de Conta Bancária
-Este é um projeto desenvolvido como parte de um trabalho acadêmico valendo pontos, onde fui aplicando e consolidando meu conhecimento sobre Programação Orientada a Objetos (POO) em Java. O objetivo foi criar um sistema simples de gerenciamento bancário, permitindo operações básicas como depósito, saque e consulta de saldo.
+💰 Bank Account Simulator
+This project was developed as part of an academic assignment worth points, where I applied and consolidated my knowledge of Object-Oriented Programming (OOP) in Java. The goal was to create a simple banking management system that allows basic operations such as deposits, withdrawals, and balance inquiries.
 
-🎯 Objetivo do Projeto
-Este projeto foi feito para demonstrar o uso de classes, métodos, encapsulamento e construtores. Durante o desenvolvimento, fui aprimorando minhas habilidades com Java, entendendo melhor a estrutura de um sistema baseado em objetos e explorando boas práticas de programação.
+🎯 Project Objective
+This project demonstrates the use of classes, methods, encapsulation, and constructors. Throughout the development, I improved my Java skills, gained a better understanding of object-based system structures, and explored best programming practices.
 
-🚀 Como rodar o projeto
-Clone o repositório:
+🚀 How to Run the Project
+Clone the repository:
 
 ```
 git clone https://github.com/SeuUsuario/NomeDoProjeto.git
 cd NomeDoProjeto
 ```
-Compile os arquivos:
+Compile the files:
 
 ```
 javac src/br/com/apsObjeto/*.java
 ```
-Execute o código:
+Run the program:
 
 ```
 java src/br/com/apsObjeto/Main
 ```
 
-📌 O que foi implementado?
-✔️ Classe Person: Representa um cliente, armazenando nome, e-mail, telefone e CPF.
-✔️ Classe Bank: Representa a conta bancária, permitindo depósitos, saques e consulta de saldo.
-✔️ Métodos deposit e withdraw: Gerenciam transações bancárias com validações básicas.
-✔️ Exibição de dados: Métodos para mostrar as informações da conta e do cliente.
+📌 Features Implemented
+✔️ Person Class: Represents a customer, storing name, email, phone number, and CPF.
+✔️ Bank Class: Represents a bank account, allowing deposits, withdrawals, and balance inquiries.
+✔️ Deposit and Withdraw Methods: Manage banking transactions with basic validations.
+✔️ Data Display: Methods to show account and customer information.
 
-🔹 Código de exemplo
+🔹 Code Example
 
 ```
   // Criando um cliente
@@ -48,13 +48,13 @@ java src/br/com/apsObjeto/Main
   // Exibindo saldo atualizado
   conta.describeAccount();
 ```
-🎓 Aprendizados
-Durante esse trabalho, pude reforçar conceitos como:
-✅ Encapsulamento e modificadores de acesso (private, public)
-✅ Uso de construtores para inicializar objetos
-✅ Métodos setters e getters para manipular atributos de forma segura
-✅ Tratamento de entrada de dados para evitar operações inválidas
+🎓 What I Learned
+During this project, I reinforced key concepts such as:
+✅ Encapsulation and access modifiers (private, public)
+✅ Using constructors to initialize objects
+✅ Setter and getter methods for secure attribute manipulation
+✅ Input validation to prevent invalid operations
 
-📌 Observação
-Este projeto faz parte da minha jornada de aprendizado e reflete meu progresso na programação orientada a objetos. Ainda há muito a melhorar e refatorar, mas foi um ótimo exercício para fortalecer conceitos fundamentais! 😃
+📌 Notes
+This project is part of my learning journey and reflects my progress in object-oriented programming. There is still much to improve and refactor, but it was a great exercise to strengthen fundamental concepts! 😃
 
